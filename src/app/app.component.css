@@ -381,6 +381,10 @@ footer {
   .social-icons {
     margin-top: 20px;
   }
+
+  .about-item img, .service-item img{
+    height: 200px;
+  }
 }
 
 @media (max-width: 480px) {
@@ -397,7 +401,8 @@ footer {
   }
 
   .about-item img, .service-item img {
-    height: 250px;
+    /* height: 250px; */
+    object-fit: contain;
   }
 
   .project-item h3 {
@@ -408,6 +413,10 @@ footer {
     width: 100%;
     padding: 15px;
   }
+
+  /* .logo {
+    margin-top: 21%;
+  } */
 }
 
 /* For 350px devices */
@@ -429,7 +438,8 @@ footer {
   }
 
   .about-item img, .service-item img {
-    height: 200px;
+    /* height: 200px; */
+    object-fit: contain;
   }
 
   .project-item h3 {
@@ -461,6 +471,7 @@ footer {
   /* Show the mobile menu button */
   .mobile-menu-toggle {
     display: block;
+    margin-left: 90%;
   }
 
   /* Hide the desktop navigation by default */
@@ -471,6 +482,8 @@ footer {
   /* Show navigation when active (mobile menu toggled) */
   nav.active {
     display: flex;
+    margin-right: 15%;
+    margin-top: 10%;
   }
 }
 
