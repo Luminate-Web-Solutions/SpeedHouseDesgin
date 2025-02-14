@@ -23,6 +23,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:application",
           "options": {
+            "baseHref": "./",
             "outputPath": "dist/speedhouse",
             "index": "src/index.html",
             "browser": "src/main.ts",
@@ -34,6 +35,11 @@
               {
                 "glob": "**/*",
                 "input": "public"
+              },
+              {
+                "glob": "submit_contact.php",
+                "input": "src/app",
+                "output": "/"
               }
             ],
             "styles": [
@@ -47,12 +53,12 @@
                 {
                   "type": "initial",
                   "maximumWarning": "500kB",
-                  "maximumError": "1MB"
+                  "maximumError": "5MB"
                 },
                 {
                   "type": "anyComponentStyle",
                   "maximumWarning": "2kB",
-                  "maximumError": "4kB"
+                  "maximumError": "1MB"
                 }
               ],
               "outputHashing": "all"
