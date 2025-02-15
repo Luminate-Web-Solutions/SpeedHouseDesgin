@@ -26,14 +26,12 @@ header {
 header.scrolled {
   background-color: #6495ed; /* Background color when scrolled */
 }
-
 nav {
   display: flex;
   align-items: center;
   justify-content: flex-start; /* Aligns links to the left */
   flex-wrap: wrap; /* Allows the links to wrap if they exceed the width */
 }
-
 nav a {
   color: black;
   text-decoration: none;
@@ -59,8 +57,7 @@ nav a:hover {
 
 .dropdown-content {
   display: none;
-  position: absolute;
-  background-color: #f9f9f9;
+  position: absolute; 
   min-width: 160px;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 1;
@@ -210,7 +207,7 @@ nav a:hover {
   height: auto;
   border-radius: 8px;
   object-fit: cover; /* Ensures image covers the area */
-  margin-bottom: -75px; /* Decreased margin between image and content */
+  margin-bottom: -130px; /* Decreased margin between image and content */
 }
 
 .project-item h3 {
@@ -309,6 +306,7 @@ footer {
     color: black;
     font-size: 24px;
     order: 1;
+    
   }
 
   nav {
@@ -337,7 +335,7 @@ footer {
 
   nav a {
     width: 100%;
-    margin: 0;
+    margin: 3px;
     padding: 12px 20px;
     border-bottom: 1px solid #eee;
   }
@@ -368,7 +366,7 @@ footer {
   .project-item {
     max-width: 100%;
   }
-
+  
   .contact-form {
     padding: 20px;
   }
@@ -444,6 +442,7 @@ footer {
 
   .project-item h3 {
     font-size: 16px;
+    padding-top: 20px;
   }
 
   .contact-form {
